@@ -184,10 +184,9 @@ input {
   border-radius: 5px;
 }
 
-input:focus{
-  border: 1px solid transparent;
+input:focus {
+  outline: 1px solid #596D48;
   box-shadow: 1px 1px 8px black;
-  /* border-color: blue; */ 
 }
 
 
