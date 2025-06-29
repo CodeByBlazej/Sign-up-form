@@ -69,22 +69,73 @@ body {
   flex-direction: column;
   /* justify-content: center; */
   flex-grow: 1;
+  /* justify-content: center; */
 }
 
 .header {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
   background-color: lightgrey;
+  box-shadow: 1px 1px 8px #888888;
+}
+
+h2 {
+  font-size: 1.2rem;
+  white-space: pre-line;
+  /* margin-left: 40px; */
+  margin: 5% 5%;
+}
+
+.form-content {
+  flex-grow: 1;
+  background-color: silver;
+
+}
+
+form {
+  background-color: silver;
   box-shadow: 1px 1px 8px #888888;
 }
 
 fieldset {
   display: flex;
   flex-direction: row;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   gap: 30px;
   border: none;
+  margin-left: 5%;
+
   /* justify-content: center; */
+}
+
+.footer {
+  /* display: flex; */
+  /* flex-direction: column; */
+  flex-grow: 1;
+  background-color: lightgrey;
+  box-shadow: 1px 1px 8px #888888;
+  /* flex-grow: 1; */
+}
+
+button {
+  color: lightgrey;
+  background-color: #596D48;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  height: 35px;
+  box-shadow: 1px 1px 8px #888888;
+  margin: 2% 5%;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 1px 1px 8px black;
+}
+
+p {
+  margin: 0 5%;
 }
 
 
