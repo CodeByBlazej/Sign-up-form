@@ -180,7 +180,7 @@ label {
 }
 
 input {
-  border: 1px solid #ccc;
+  border: 1px solid #E5E7EB;
   border-radius: 5px;
 }
 
@@ -189,6 +189,16 @@ input:focus {
   box-shadow: 1px 1px 8px black;
 }
 
+
+input[type="password"]:invalid {
+  outline: 1px solid red;
+  box-shadow: 1px 1px 8px black;
+}
+
+input[type="password"]:invalid:focus{
+  outline: 1px solid #596D48;
+  box-shadow: 1px 1px 8px black;
+}
 
 
 .left {
