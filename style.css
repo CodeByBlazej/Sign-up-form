@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -76,7 +85,7 @@ body {
 .header {
   display: flex;
   align-items: center;
-  flex-grow: 1;
+  flex-grow: 2;
   background-color: lightgrey;
   box-shadow:  0px 2px 2px -2px #888888;
 }
@@ -84,15 +93,17 @@ body {
 h2 {
   font-size: 1.2rem;
   white-space: pre-line;
-  /* margin-left: 40px; */
-  margin: 5% 5%;
+  /* margin-left: 5%; */
+  margin: 10% 5% 0%;
   flex-grow: 1;
 }
 
 .form-content {
   display: flex;
-  /* flex-grow: 1; */
   flex-direction: column;
+  flex-grow: 1;
+  /* justify-content: center; */
+  /* align-items: center; */
   /* background-color: silver; */
   /* box-shadow:  0px 12px 2px 22px #888888; */
 
@@ -101,18 +112,23 @@ h2 {
 
 form {
   /* background-color: silver; */
-  
+  display: flex;
+  /* flex-direction: column; */
+  flex-grow: 1;
+  /* justify-content: center; */
+  /* align-items: center; */
   /* box-shadow: inset 1px 1px 8px #888888; */
 }
 
 fieldset {
   display: flex;
   flex-direction: column;
-  /* flex-grow: 1; */
+  flex-grow: 1;
   gap: 10px;
   border: none;
   /* margin-left: 5%; */
   justify-content: center;
+  /* align-items: center; */
   margin: 0;
   padding: 0;
 }
@@ -128,7 +144,7 @@ fieldset div {
 legend {
   font-size: 1.2rem;
   font-weight: bold;
-  padding: 2% 5%;
+  padding: 2% 5% 0% 5%;
 }
 
 fieldset div p {
@@ -138,13 +154,12 @@ fieldset div p {
 }
 
 .footer {
-  /* display: flex; */
-  /* flex-direction: column; */
-  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
   background-color: lightgrey;
   box-shadow:  0px 2px 2px -2px #888888;
   /* box-shadow: 1px 1px 8px #888888; */
-  /* flex-grow: 1; */
 }
 
 button {
@@ -203,5 +218,47 @@ input[type="password"]:invalid:focus{
 
 .left {
   display: flex;
-  /* flex-direction: row; */
+  position: relative;
+}
+
+.logo-background {
+  position: absolute;
+  display: flex;
+  top: 25%;
+  bottom: 55%;
+  width: 100%;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.odin-logo {
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.odin-face {
+  max-width: 85%;
+  max-height: 85%;
+}
+
+.odin-logo p {
+  font-family: 'norsebold', 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 5.5rem;
+  color: white;
+}
+
+.left-footer {
+  position: absolute;
+  display: flex;
+  bottom: 0%;
+  width: 100%;
+  justify-content: center;
+}
+
+.left-footer p,
+.link {
+  color: white;
+  font-size: small;
 }
