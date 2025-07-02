@@ -100,7 +100,6 @@ h2 {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  /* box-shadow: 10px 15px 15px #888888; */
 }
 
 form {
