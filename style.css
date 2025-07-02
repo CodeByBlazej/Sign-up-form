@@ -203,7 +203,7 @@ input[type="password"]:invalid:focus{
   justify-content: center;
   width: 100%;
   background-color: rgb(0, 0, 0, 0.5);
-  margin-top: 45%;
+  margin-top: 35%;
   padding: 3%;
 }
 
