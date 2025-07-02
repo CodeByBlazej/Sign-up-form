@@ -67,19 +67,18 @@ h1, h2, h3, h4, h5, h6 {
 body {
   display: flex;
   height: 100vh;
-  /* width: 100vw; */
 }
 
 .main-pic {
   height: 100vh;
+  width: 100%;
+  object-fit: cover;
 }
 
 .right {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   flex-grow: 1;
-  /* justify-content: center; */
 }
 
 .header {
@@ -93,7 +92,6 @@ body {
 h2 {
   font-size: 1.2rem;
   white-space: pre-line;
-  /* margin-left: 5%; */
   margin: 10% 5% 0%;
   flex-grow: 1;
 }
@@ -102,22 +100,11 @@ h2 {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* background-color: silver; */
-  /* box-shadow:  0px 12px 2px 22px #888888; */
-
-
 }
 
 form {
-  /* background-color: silver; */
   display: flex;
-  /* flex-direction: column; */
   flex-grow: 1;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* box-shadow: inset 1px 1px 8px #888888; */
 }
 
 fieldset {
@@ -126,31 +113,21 @@ fieldset {
   flex-grow: 1;
   gap: 10px;
   border: none;
-  /* margin-left: 5%; */
   justify-content: center;
-  /* align-items: center; */
   margin: 0;
   padding: 0;
 }
 
 fieldset div {
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* flex-direction: column; */
-  /* flex-grow: 1; */
+  flex-wrap: wrap;
+  gap: 1.2rem;
 }
 
 legend {
   font-size: 1.2rem;
   font-weight: bold;
   padding: 2% 5% 0% 5%;
-}
-
-fieldset div p {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* flex-grow: 1; */
 }
 
 .footer {
@@ -180,13 +157,6 @@ button:hover {
 
 p {
   margin: 0 5%;
-}
-
-
-#left-forms {
-  /* min-width: 0px; */
-  /* display: flex; */
-  /* align-items: center */
 }
 
 label {
@@ -224,6 +194,7 @@ input[type="password"]:invalid:focus{
 .logo-background {
   position: absolute;
   display: flex;
+  flex-shrink: 0;
   top: 25%;
   bottom: 55%;
   width: 100%;
@@ -234,18 +205,18 @@ input[type="password"]:invalid:focus{
 .odin-logo {
   display: flex;
   align-items: center;
-  /* flex-wrap: wrap; */
 }
 
 .odin-face {
-  max-width: 85%;
-  max-height: 85%;
+  width: clamp(40px, 8vw, 100px);
+  height: auto;
+  flex-shrink: 0;
 }
 
 .odin-logo p {
   font-family: 'norsebold', 'Courier New', Courier, monospace;
   font-weight: bold;
-  font-size: 5.5rem;
+  font-size: clamp(2rem, 6vw, 5.5rem);
   color: white;
 }
 
